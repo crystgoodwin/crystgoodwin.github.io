@@ -44,7 +44,11 @@ a {
 }
 
 /* !REUSABLE CLASSES */
-
+.container {
+   max-width: var(--container-width);
+   margin: 0 auto;
+   padding: 0 var(--container-padding);
+}
 
 /* !HEADER */
 .header {
@@ -59,8 +63,29 @@ a {
    position: relative;
 }
 
-.container {
-   max-width: var(--container-width);
-   margin: 0 auto;
-   padding: 0 var(--container-padding);
+.logo {
+   font-family: var(--title-font-family);
+   font-size: 3rem;
+   font-weight: 600;
+}
+
+img {
+   max-width: 30px;
+}
+
+.button {
+   cursor: pointer;
+}
+
+.theme-on {
+   display: none;
+}
+
+/* !JAVASCRIPT STYLES */
+.dark-theme .theme-off {
+   display: none
+}
+
+.dark-theme .theme-on {
+   display: block;
 }
