@@ -1,10 +1,10 @@
-# Portfolio Site
-A simple portfolio site to host my current projects
+# Project Site
+A simple website to host my current projects
 
-##Screenshots
+## Screenshots
 ![Image Name](Image location)
 
-##Author
+## Author
 **Crystal Goodwin**
-- [Profile](https://github.com/crystgoodwin "Crystal Goodwin")
-- [Website](https://github.com/)
+- [Github Profile](https://github.com/crystgoodwin "Crystal Goodwin")
+- [Live site](https://github.com/crystgoodwin)
