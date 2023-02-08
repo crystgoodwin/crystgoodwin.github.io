@@ -32,7 +32,7 @@ body {
 }
 
 body.dark-theme {
-   --light-color: #000;
+   --light-color: #130f0f;
    --dark-color: #fff;
    --border-top-color: rgba(255, 255, 255, .1);
 }
@@ -50,6 +50,26 @@ a {
    padding: 0 var(--container-padding);
 }
 
+.section {
+   position: relative;
+}
+
+.d-grid {
+   display: grid;
+}
+
+.section:not(.hero)::before {
+   content: '';
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 80vw;
+   height: 80vh;
+   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 101, 118, .08) 0%, rgba(255, 101, 118, 0) 100%);
+   z-index: -1;
+}
+
 /* !HEADER */
 .header {
    margin-bottom: 5rem;
@@ -65,7 +85,7 @@ a {
 
 .logo {
    font-family: var(--title-font-family);
-   font-size: 3rem;
+   font-size: 2rem;
    font-weight: 600;
 }
 
@@ -88,4 +108,74 @@ img {
 
 .dark-theme .theme-on {
    display: block;
+}
+
+/* !HERO */
+
+.title {
+   font-family: var(--title-font-family);
+   font-weight: 300;
+   text-transform: uppercase;
+}
+
+.main-title {
+   font-size: clamp(5rem, 10vw, 10rem);
+   text-align: center;
+   line-height: 1.2;
+}
+
+.job-title {
+   font-size: clamp(3rem, 5vw, 5rem);
+   text-align: center;
+   line-height: 1.2;
+}
+
+.proj-title {
+   font-size: clamp(1.5rem, 3vw, 2rem);
+   text-align: center;
+   padding-top: 4rem;
+}
+
+.inline-image {
+   display: inline-block;
+   width: 7rem;
+   height: 7rem;
+   background: url(images/hero-image.jpg) top center no-repeat;
+   background-size: cover;
+   border-radius: 50%;
+   border-bottom-left-radius: 0;
+   margin: 0 1.5rem;
+}
+
+.has-sparkles,
+.has-sparkles-alt {
+   position: relative;
+}
+
+.has-sparkles::before,
+.has-sparkles::after {
+   content: '';
+   position: absolute;
+   background: url(images/sparkle.png) center no-repeat;
+   background-size: cover;
+}
+
+.dark-theme .has-sparkles::before,
+.dark-theme .has-sparkles::after {
+   background: url(images/sparkle_light.png) center no-repeat;
+   background-size: cover;
+}
+
+.has-sparkles::before {
+   width: 1rem;
+   height: 1rem;
+   top: -.5rem;
+   right: -.5rem;
+}
+
+.has-sparkles::after {
+   width: .8rem;
+   height: .8rem;
+   bottom: 1rem;
+   right: -1.2rem;
 }
