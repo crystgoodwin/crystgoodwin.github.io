@@ -300,3 +300,53 @@ a {
 .button-fill:focus::before {
    transform: scale(1);
 }
+
+/* !ABOUT STYLES */
+
+.description-image {
+   width: 25rem;
+   height: 25rem;
+   margin: 0 auto;
+}
+
+.description-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.tech-stack {
+   max-width: 50rem;
+   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
+
+.tech-stack-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.tech-stack-item i {
+   font-size: 5rem;
+   opacity: .5;
+}
+
+.dark-theme .tech-stack-item i {
+   opacity: .8;
+}
+
+.tech-stack-item::before,
+.tech-stack-item::after {
+   position: absolute;
+   top: -1rem;
+   transform: translateY(-100%);
+   opacity: 0;
+   transition: transform .5s, opacity .5s;
+}
+
+.tech-stack-item::before {
+   content: '';
+   border: 1rem solid transparent;
+   border-top-color: var(--dark-color);
+}
