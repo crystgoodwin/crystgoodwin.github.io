@@ -50,6 +50,18 @@ a {
    outline: none;
 }
 
+ul {
+   list-style: none;
+}
+
+span {
+   display: inline-block;
+}
+
+i {
+   font-size: 2.4rem;
+}
+
 /* !REUSABLE CLASSES */
 .container {
    max-width: 54rem;
@@ -96,12 +108,12 @@ a {
 
 .logo {
    font-family: var(--title-font-family);
-   font-size: 2rem;
+   font-size: 3rem;
    font-weight: 600;
 }
 
 .img-icon {
-   max-width: 30px;
+   max-width: 20px;
 }
 
 .button {
@@ -110,6 +122,22 @@ a {
 
 .theme-on {
    display: none;
+}
+
+.list {
+   display: flex;
+   gap: 2.5rem;
+}
+
+.list-item {
+   text-transform: uppercase;
+   font-size: 1.3rem;
+   letter-spacing: 2px;
+}
+
+.list-item:hover,
+.list-item:focus {
+   opacity: .7;
 }
 
 .list-link:hover,
@@ -130,6 +158,10 @@ a {
 
 /* !HERO */
 
+.hero {
+   margin-top: 15rem;
+}
+
 .title {
    font-family: var(--title-font-family);
    font-weight: 300;
@@ -146,12 +178,6 @@ a {
    font-size: clamp(3rem, 5vw, 5rem);
    text-align: center;
    line-height: 1.2;
-}
-
-.proj-title {
-   font-size: clamp(1.5rem, 3vw, 2rem);
-   text-align: center;
-   padding-top: 4rem;
 }
 
 .inline-image {
@@ -231,7 +257,7 @@ a {
 
 .card-image {
    height: 30rem;
-   background-color: burlywood;
+   background-color: #e0d6ce;
    margin-bottom: 2.5rem;
    border-radius: .4rem;
    display: flex;
@@ -248,7 +274,9 @@ a {
 
 .portfolio-card:hover .card-image,
 .portfolio-card:focus .card-image {
-   background-color: #ff7575;
+   /* background-color: #ded9d4; */
+   opacity: 0.5;
+   transition: 0.3s;
 }
 
 .card-heading {
@@ -398,6 +426,20 @@ a {
 
 .footer .list-link {
    color: var(--dark-color);
+}
+
+.footer-list-item i {
+   font-size: 18px;
+}
+
+.footer-list {
+   display: flex;
+   gap: 2.5rem;
+}
+
+.footer-list-item:hover,
+.footer-list-item:focus {
+   opacity: .7;
 }
 
 .scroll-top {
