@@ -6,5 +6,5 @@ A simple website to host my current projects
 
 ## Author
 **Crystal Goodwin**
-- [Github Profile](https://github.com/crystgoodwin "Crystal Goodwin")
-- [Live site](https://github.com/crystgoodwin)
+- [Github Profile](https://github.com/crystgoodwin)
+- [Live site](https://crystgoodwin.github.io/)
